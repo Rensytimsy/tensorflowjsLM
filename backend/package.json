@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": "echo/no test provided",
+    "build": "tsc",
+    "start": "tsc ./src/index.ts",
+    "dev": "tsx --watch ./src/index.ts"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "cookie-parser": "^1.4.7",
+    "mongoose": "^8.16.1",
+    "tsx": "^4.20.3"
+  }
+}

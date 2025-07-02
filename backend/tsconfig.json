@@ -1,0 +1,12 @@
+{
+ "compilerOptions": {
+  "rootDir": "./src",
+  "outDir": "./dist",
+  "esModuleInterop": true,
+  "module": "esnext",
+  "moduleResolution": "node",
+  "allowSyntheticDefaultImports": true
+ },
+ "include": ["src/**/*.ts"],
+ "exclude": ["dist", "node_modules"]
+}
