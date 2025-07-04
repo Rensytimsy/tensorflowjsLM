@@ -1,12 +1,7 @@
 import express,{Request, Response} from "express";
+import app from "./app"
+import { configdata } from "./config/config";
 
-
-const app = express();
-
-app.get("/", (req: Request, res: Response) => {
-    res.send({message: "Hello world from root endpoint.. is this not awsome!"});
-})
-
-app.listen(3000, () => {
-    console.log("http://localhost:3000")
-})
+app.listen(configdata.port, () => {
+    console.log(`server running at --> http://localhost:${configdata.port}`);
+});

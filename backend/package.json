@@ -8,12 +8,18 @@
   },
   "dependencies": {
     "express": "^5.1.0",
+    "pug": "^3.0.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
+    "@tensorflow-models/coco-ssd": "^2.2.3",
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "@types/dotenv": "^8.2.3",
     "@types/express": "^5.0.3",
+    "busboy": "^1.6.0",
     "cookie-parser": "^1.4.7",
+    "dotenv": "^17.0.1",
     "mongoose": "^8.16.1",
     "tsx": "^4.20.3"
   }
