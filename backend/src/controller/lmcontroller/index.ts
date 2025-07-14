@@ -26,7 +26,7 @@ export const LmTrainEndpoint = async(req: Request, res:Response, next: NextFunct
       const lables = [];
 
       //Below is processing images of the front profile of a chair
-      for(const url of dataset[0].front.slice(0,8)){
+      for(const url of dataset[0].front.slice(0,25)){
         const tensor = await preProcessImageUrls(url);
         if(tensor){
           images.push(tensor);
@@ -35,7 +35,7 @@ export const LmTrainEndpoint = async(req: Request, res:Response, next: NextFunct
       }
 
       //Below is processing images of the side profile of a chair
-      for(const url of dataset[1].side.slice(0,8)){
+      for(const url of dataset[1].side.slice(0,25)){
         const tensor = await preProcessImageUrls(url);
         if(tensor){
           images.push(tensor),
@@ -44,7 +44,7 @@ export const LmTrainEndpoint = async(req: Request, res:Response, next: NextFunct
       }
 
       //Below is processing images of the back profile of a chair
-      for(const url of dataset[2].back.slice(0,8)){
+      for(const url of dataset[2].back.slice(0,25)){
         const tensor = await preProcessImageUrls(url);
         if(tensor){
           images.push(tensor),

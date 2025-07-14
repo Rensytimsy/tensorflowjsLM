@@ -1,5 +1,6 @@
 import express,{Response, Request} from "express";
 import LmRoutes from "./routes/lmroutes/index";
+import LMMaizeRoutes from "./routes/lmmaizeroutes/index"
 import cookieparser from "cookie-parser";
 import { customError } from "./lib/customerror";
 import cors from "cors"
@@ -25,6 +26,7 @@ app.use(cookieparser());
 app.use(cors_configurations);
 
 app.use("/api", LmRoutes);
+app.use("/api", LMMaizeRoutes);
 
 //Next error handler middleware
 app.use(customError);

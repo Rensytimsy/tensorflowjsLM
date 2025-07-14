@@ -31,7 +31,7 @@ export const preProcessImageUrls = async(url: string) => {
         console.log(`Error processing image ${url}, can't be completed!`);
         return null;
     }
-}
+} 
 
 export const createModel = () => {
     const model = tf.sequential();
@@ -55,7 +55,7 @@ export const createModel = () => {
     model.add(tf.layers.dense({ units: 3, activation: 'softmax'}));
 
     model.compile({
-        optimizer: tf.train.adam(0.001),
+        optimizer: tf.train.adam(0.0001),
         loss: "categoricalCrossentropy",
         metrics: ["accuracy"]
     });

@@ -1,0 +1,36 @@
+What is Machine Learning: Machine Learning is a subset of Ai where the algorithm learns patterns from a dataset for prediction and decision  making.
+There are different types of machine learning: 
+    1.Supervised learning : model rely's on labeled data to predict outcomes.
+    2.Unsupervised learning: model uses unlabeled data to discover hidden patterns and structures.
+    3. Reinforcement learning: Models are trained to make decisions through trail and error, receiving rewards or penalties for their actions.
+
+Training a image detection model it's likely that one will rely on (CNN tensorflowjs).
+
+How to create a model: 
+    1.Define the problem
+    2.prepare and collect data
+    3.Future engineering - thouroughly polish the data for better learning
+    4.Create/train model
+    5.Monitor models perfomance: highlight losses and accuracy are they perfect?
+
+Below is a simple model created for detecting maize crop diseases:
+    *step one the proble: A model for detecting crop diseases
+    *step two data collection/preperation: collect different variety of both maize crop, maize crops with diseases etc.
+        maizedata.json {
+            maize: [
+                different maize images here
+            ],
+            bipolaris: [
+                different maize images with bipolaris disease
+            ],
+            head-smut: [
+                different maize images with head smut disease
+            ],
+            leathal-cecrosis: [
+                different maize images with leathal cecrosis disease
+            ]
+        }
+    *step three future engineering: pre-check the data provided for better model learning refine it if possible
+    *create/train the model on the data collected
+    *Monitor based on your data is the model prediction accurate or off ? if off adjust the model or the data tha was collected.
+
